@@ -62,6 +62,8 @@ export default {
       { title: 'Dashboard', icon: 'mdi-view-dashboard' ,to:"/"},
       { title: 'Grid', icon: 'mdi-image' ,to:"/grid-system"},
       { title: 'GridList', icon: 'mdi-image' ,to:"/grid-list"},
+      { title: 'BreakPoint', icon: 'mdi-image' ,to:"/break-point"},
+      { title: 'typography', icon: 'mdi-image' ,to:"/typography"},
     ],
     right: null,
   }),
