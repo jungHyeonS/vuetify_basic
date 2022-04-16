@@ -9,7 +9,12 @@
 
       <v-spacer></v-spacer>
     </v-app-bar>
-    <v-navigation-drawer app v-model="drawer">
+    <v-navigation-drawer app v-model="drawer" :src="require('@/assets/sidebar.jpg')" dark>
+      <template #img="props">
+        <v-img :gradient="gradient" v-bind="props">
+          
+        </v-img>
+      </template>
       <v-list-item>
         <v-list-item-content>
           <v-list-item-title class="text-h6">
@@ -32,6 +37,7 @@
           :key="item.title"
           link
           :to="item.to"
+          active-class="primary" class="py-1"
         >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
@@ -58,12 +64,17 @@ export default {
 
   data: () => ({
     drawer:false,
+    gradient:"rgba(0,0,0,.7), rgba(0,0,0,0.7)",
     items: [
       { title: 'Dashboard', icon: 'mdi-view-dashboard' ,to:"/"},
       { title: 'Grid', icon: 'mdi-image' ,to:"/grid-system"},
       { title: 'GridList', icon: 'mdi-image' ,to:"/grid-list"},
       { title: 'BreakPoint', icon: 'mdi-image' ,to:"/break-point"},
       { title: 'typography', icon: 'mdi-image' ,to:"/typography"},
+      { title: 'Table', icon: 'mdi-image' ,to:"/Table"},
+      { title: 'Forms', icon: 'mdi-image' ,to:"/Forms"},
+      { title: 'Buttons', icon: 'mdi-image' ,to:"/Buttons"},
+      { title: 'Icon', icon: 'mdi-image' ,to:"/icons"},
     ],
     right: null,
   }),

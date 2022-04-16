@@ -22,7 +22,7 @@
             <v-card-text class="pa3 error--text">
                 컨텐츠
             </v-card-text>
-            <v-container class="gray">
+            <v-container class="gray d-none d-sm-block">
                 <v-card class="pa-3" outlined>
                     <p class="text-h1">Heading 1</p>
                     <p class="text-h2">Heading 2</p>

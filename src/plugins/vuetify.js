@@ -9,12 +9,12 @@ export default new Vuetify({
     // breakpoint:{
     //     mobileBreakpoint : "xs"
     // }
-    theme: {
-        themes: {
-            light: {
-                primary: colors.yellow,
-                secondary: '#E57373',
-            }
-        }
-    }
+    // theme: {
+    //     themes: {
+    //         light: {
+    //             primary: colors.yellow,
+    //             secondary: '#E57373',
+    //         }
+    //     }
+    // }
 });
